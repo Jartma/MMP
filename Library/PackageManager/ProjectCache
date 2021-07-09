@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637614075662645711
-    m_Hash: 2934235031
+      ticks: 637614405885046448
+    m_Hash: 4028223637
   m_LockFileStatus:
     m_FilePath: C:/Users/Chiara/Desktop/MMP/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637614075662695580
-    m_Hash: 899132911
+      ticks: 637614405885056494
+    m_Hash: 2117682208
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
