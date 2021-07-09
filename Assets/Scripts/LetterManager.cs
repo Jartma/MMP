@@ -51,6 +51,7 @@ public class LetterManager : MonoBehaviour
     
         if (H != null && E != null && Y != null) {
             CheckHey(H, E, Y);
+            ScoreScript.scoreValue += 10;
         }
     }
 
