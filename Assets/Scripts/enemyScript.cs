@@ -1,22 +1,29 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 public class enemyScript : MonoBehaviour
 {
-    public float walkSpeed;
+    [SerializeField] private float speed = 5.0f;
+    private Rigidbody2D rBCircle;
 
     [HideInInspector]
     public bool mustPatrol;
     private bool mustTurn;
-
-    public Rigidbody2D rbCircle;
+    
     public Transform groundCheckPos;
     public LayerMask groundLayer;
+
+    private void Awake()
+    {
+        rBCircle = GetComponent<Rigidbody2D>();
+    }
 
     // Start is called before the first frame update
     void Start()
     {
+        //get component here to make it more performant
+        //rBCircle = GetComponent<Rigidbody2D>();
+        
         mustPatrol = true;
         
     }
@@ -24,6 +31,10 @@ public class enemyScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        float horizontalMovement = Input.GetAxis("Horizontal");
+        Vector2 movementVec = new Vector2(horizontalMovement, 0.0f);
+        rBCircle.AddForce(movementVec * speed);
+        
         if (mustPatrol)
         {
             Patrol();
@@ -40,14 +51,14 @@ public class enemyScript : MonoBehaviour
     }
     void Patrol()
     {
-        rbCircle.velocity = new Vector2(walkSpeed * Time.fixedDeltaTime, rbCircle.velocity.y);
+        rBCircle.velocity = new Vector2(speed * Time.fixedDeltaTime, rBCircle.velocity.y);
     }
 
     void Flip()
     {
         mustPatrol = false;
         transform.localScale = new Vector2(transform.localScale.x * -1, transform.localScale.y);
-        walkSpeed *= -1;
+        speed *= -1;
         mustPatrol = true;
     }
 }
