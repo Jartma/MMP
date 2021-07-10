@@ -63,6 +63,7 @@
      <Compile Include="Assets\Scripts\Health\Healthbar.cs" />
      <Compile Include="Assets\Scripts\Timer.cs" />
      <Compile Include="Assets\Scripts\EnergyManager.cs" />
+     <Compile Include="Assets\HeartScript.cs" />
      <None Include="Assets\Sprites\Character\Read Me.txt" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
