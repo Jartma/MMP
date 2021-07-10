@@ -23,7 +23,6 @@ public class LetterManager : MonoBehaviour
     {
         screenBounds = Camera.main.ScreenToWorldPoint(new Vector3 (Screen.width, Screen.height, 0.0f));
         ground = GameObject.FindGameObjectWithTag("Ground").GetComponent<BoxCollider2D>();
-        //player = GameObject.
     }
 
     // Update is called once per frame
