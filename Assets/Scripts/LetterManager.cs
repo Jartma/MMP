@@ -17,7 +17,6 @@ public class LetterManager : MonoBehaviour
 
     private GameObject letter;
     private BoxCollider2D ground;
-    private BoxCollider2D player;
 
     void Start()
     {

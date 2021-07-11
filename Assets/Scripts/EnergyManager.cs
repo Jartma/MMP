@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class EnergyManager : MonoBehaviour
 {
@@ -8,12 +10,14 @@ public class EnergyManager : MonoBehaviour
     [SerializeField] private float spawnTime = 1.0f;
     private float counter = 0.0f;
     private Vector2 screenBounds;
+
+    private BoxCollider2D letter;
     
     // Start is called before the first frame update
     void Start()
     {
         screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0.0f));
-
+        //letter = GameObject.FindGameObjectWithTag("Letter").GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame
@@ -32,6 +36,14 @@ public class EnergyManager : MonoBehaviour
 
             GameObject energy = Instantiate<GameObject>(energyPrefabs[0]);
             energy.transform.position = spawnPos;
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Letter")
+        {
+            Destroy(this.gameObject);
         }
     }
 }
