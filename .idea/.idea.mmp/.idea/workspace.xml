@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2f98302b-56fc-47a7-a81c-e44c690cbfd7" name="Default Changelist" comment="">
+    <list default="true" id="2f98302b-56fc-47a7-a81c-e44c690cbfd7" name="Default Changelist" comment="default Changelist">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.mmp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.mmp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrefabsEnergy/heart.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrefabsEnergy/heart.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnergyManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnergyManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeartScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeartScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/4d/4d2a36d9faf65734f0bbefb3ee623532.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/4d/4d2a36d9faf65734f0bbefb3ee623532.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/8c/8cd7c613bf844de3b80696e27a479d5e.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/8c/8cd7c613bf844de3b80696e27a479d5e.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,10 +32,11 @@
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Scripts/enemyScript.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/EnergyManager.cs" />
       <option value="$PROJECT_DIR$/Assets/HeartScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/LetterManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/EnergyManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/HeartScript.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1v7bSisyCerA3bZ9bnvI7BMUphX" />
@@ -76,6 +84,7 @@
       <option name="presentableId" value="Default" />
       <updated>1625916078033</updated>
       <workItem from="1625916091798" duration="7547000" />
+      <workItem from="1625987133470" duration="2126000" />
     </task>
     <task id="LOCAL-00001" summary="Energy/Heart added/instantiate">
       <created>1625922507762</created>
@@ -105,13 +114,20 @@
       <option name="project" value="LOCAL" />
       <updated>1625926019802</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="default Changelist">
+      <created>1625987248419</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1625987248419</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -123,6 +139,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
@@ -130,6 +147,7 @@
     <MESSAGE value="heart size changed &amp; animate" />
     <MESSAGE value="heart collider added" />
     <MESSAGE value="unversioned files" />
-    <option name="LAST_COMMIT_MESSAGE" value="unversioned files" />
+    <MESSAGE value="default Changelist" />
+    <option name="LAST_COMMIT_MESSAGE" value="default Changelist" />
   </component>
 </project>

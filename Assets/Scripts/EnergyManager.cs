@@ -27,7 +27,8 @@ public class EnergyManager : MonoBehaviour
             counter = 0.0f;
             
             //1.5f sieht man das aufploppen nicht
-            Vector2 spawnPos = new Vector2(Random.Range(-screenBounds.x, +screenBounds.x), screenBounds.y*1.5f);
+            //Vector2 spawnPos = new Vector2(Random.Range(-screenBounds.x, +screenBounds.x), screenBounds.y*1.5f);
+            Vector2 spawnPos = new Vector2(-screenBounds.x*1.5f, Random.Range(-screenBounds.y, +screenBounds.y));
 
             GameObject energy = Instantiate<GameObject>(energyPrefabs[0]);
             energy.transform.position = spawnPos;

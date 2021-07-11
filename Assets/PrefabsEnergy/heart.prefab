@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2342620770260728861}
   - component: {fileID: -3597124656476430183}
   - component: {fileID: -1715926956725854318}
+  - component: {fileID: 7532335212758256268}
   m_Layer: 0
   m_Name: heart
   m_TagString: Untagged
@@ -135,3 +136,22 @@ CapsuleCollider2D:
   m_Offset: {x: -0.14587402, y: 1.7230225}
   m_Size: {x: 18.465576, y: 18.465576}
   m_Direction: 0
+--- !u!95 &7532335212758256268
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7962487511300925547}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d28e28c1774e62c47bf9f3eee94f8533, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
