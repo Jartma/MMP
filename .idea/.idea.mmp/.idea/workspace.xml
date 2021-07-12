@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2f98302b-56fc-47a7-a81c-e44c690cbfd7" name="Default Changelist" comment="Heart flying left to right; change Color">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.mmp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.mmp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrefabsEnergy/heart.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrefabsEnergy/heart.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnergyManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnergyManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LetterManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LetterManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/4d/4d2a36d9faf65734f0bbefb3ee623532.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/4d/4d2a36d9faf65734f0bbefb3ee623532.json" afterDir="false" />
-    </list>
+    <list default="true" id="2f98302b-56fc-47a7-a81c-e44c690cbfd7" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -80,7 +70,7 @@
       <option name="presentableId" value="Default" />
       <updated>1625916078033</updated>
       <workItem from="1625916091798" duration="7547000" />
-      <workItem from="1625987133470" duration="3344000" />
+      <workItem from="1625987133470" duration="3624000" />
     </task>
     <task id="LOCAL-00001" summary="Energy/Heart added/instantiate">
       <created>1625922507762</created>
@@ -124,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625992038015</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Heart destroy by collision - not working">
+      <created>1625993116538</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1625993116538</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,6 +149,7 @@
     <MESSAGE value="unversioned files" />
     <MESSAGE value="default Changelist" />
     <MESSAGE value="Heart flying left to right; change Color" />
-    <option name="LAST_COMMIT_MESSAGE" value="Heart flying left to right; change Color" />
+    <MESSAGE value="Heart destroy by collision - not working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Heart destroy by collision - not working" />
   </component>
 </project>

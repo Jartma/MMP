@@ -1,7 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
+using Random = UnityEngine.Random;
 
 public class LetterManager : MonoBehaviour
 {
@@ -40,6 +42,7 @@ public class LetterManager : MonoBehaviour
             letter.transform.position = spawnPos;
 
             CheckWord();
+            
         }
         
     }
@@ -51,7 +54,6 @@ public class LetterManager : MonoBehaviour
     
         if (H != null && E != null && Y != null) {
             CheckHey(H, E, Y);
-            ScoreScript.scoreValue += 10;
         }
     }
 
@@ -77,8 +79,9 @@ public class LetterManager : MonoBehaviour
                 Destroy(h);
                 Destroy(e);
                 Destroy(y);
+                ScoreScript.scoreValue += 10;
             } 
         }
     }
-    
+
 }

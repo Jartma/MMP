@@ -40,13 +40,23 @@ public class Health : MonoBehaviour
         }
     }
 
+    public void AddHealth(float _value)
+    {
+        currentHealth = Mathf.Clamp(currentHealth + _value, 0, startingHealth);
+    }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
             TakeDamage(1);
         }
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            AddHealth(1);
+        }
     }
+    
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -59,6 +69,16 @@ public class Health : MonoBehaviour
                     TakeDamage(1);
                     lastColName = collision.collider.name;
                 }
+
+            if (collision.gameObject.tag == "Heart" && currentHealth == startingHealth)
+            {
+                ScoreScript.scoreValue += 10;
+            } 
+            
+            if (collision.gameObject.tag == "Heart")
+            {
+                AddHealth(1);
+            }
         }
     }
 }
