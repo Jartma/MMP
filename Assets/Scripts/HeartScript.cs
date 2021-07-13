@@ -10,7 +10,7 @@ public class HeartScript : MonoBehaviour
 // Start is called before the first frame update
     void Start()
     {
-        GetComponent<Rigidbody2D>().velocity = new Vector2(speed, 0.2f);
+        GetComponent<Rigidbody2D>().velocity = new Vector2(speed, 0.1f);
         screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0.0f));
 
     }
