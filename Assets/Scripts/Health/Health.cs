@@ -1,3 +1,5 @@
+using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -11,6 +13,8 @@ public class Health : MonoBehaviour
     private EdgeCollider2D edgeCol;
 
     private string lastColName;
+
+    [NonSerialized] public double waitForSeconds = 2.0; 
 
 
     private void Awake()
@@ -34,9 +38,20 @@ public class Health : MonoBehaviour
             {
                 anim.SetTrigger("die");
                 GetComponent<PlayerMovement>().enabled = false;
+                
+                //Sound for GameOver 
+                AudioSource audio = GetComponent<AudioSource>();
+                audio.Play();
+
                 dead = true;
-                SceneManager.LoadScene("Menu Screen/GameOverMenu");
+
+                //SceneManager.LoadScene("Menu Screen/GameOverMenu");
+                StartCoroutine(loadGameOverScreen());
+
+
             }
+
+            
         }
     }
 
@@ -62,6 +77,17 @@ public class Health : MonoBehaviour
     {
         //check if edgeCollider2d was hit
         if(edgeCol.IsTouching(collision.collider)){
+            if(collision.gameObject.tag=="Letter" && lastColName != collision.collider.name && currentHealth == 1)
+            {
+                //letter disabled
+                collision.gameObject.GetComponent<Renderer>().enabled = false;
+
+                //only take damage if lastColName is not the same as last collision,
+                //otherwise takedamage will repeat as long as letterbox is touching the edgeCollider2d
+                TakeDamage(1);
+                lastColName = collision.collider.name;
+                
+            }
             if(collision.gameObject.tag=="Letter" && lastColName != collision.collider.name)
                 {
                     //letter disabled
@@ -114,5 +140,11 @@ public class Health : MonoBehaviour
                 Destroy(collision.gameObject, audio.clip.length);
             }
         }
+    }
+
+    IEnumerator loadGameOverScreen()
+    {
+        yield return new WaitForSeconds(seconds: 1);
+        SceneManager.LoadScene("Menu Screen/GameOverMenu");
     }
 }
