@@ -785,7 +785,7 @@ GameObject:
   - component: {fileID: 418710804}
   - component: {fileID: 418710803}
   - component: {fileID: 418710805}
-  m_Layer: 4
+  m_Layer: 6
   m_Name: EnergyManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3624,7 +3624,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1971417412}
   - component: {fileID: 1971417411}
-  m_Layer: 4
+  m_Layer: 7
   m_Name: LetterManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}

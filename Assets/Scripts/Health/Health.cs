@@ -78,14 +78,15 @@ public class Health : MonoBehaviour
         if(edgeCol.IsTouching(collision.collider)){
             if(collision.gameObject.tag=="Letter" && lastColName != collision.collider.name && currentHealth == 1)
             {
-                //letter disabled
+                //letter disabled & destroy
                 collision.gameObject.GetComponent<Renderer>().enabled = false;
+                Destroy(collision.gameObject);
 
                 //only take damage if lastColName is not the same as last collision,
                 //otherwise takedamage will repeat as long as letterbox is touching the edgeCollider2d
                 TakeDamage(1);
                 lastColName = collision.collider.name;
-                
+
             }
             if(collision.gameObject.tag=="Letter" && lastColName != collision.collider.name)
                 {
@@ -95,14 +96,14 @@ public class Health : MonoBehaviour
                     //Sound for Collision with letter 
                     AudioSource audio = collision.gameObject.GetComponent<AudioSource>();
                     audio.Play();
+                    
+                    //destroy letter
+                    Destroy(collision.gameObject, audio.clip.length);
 
                     //only take damage if lastColName is not the same as last collision,
                     //otherwise takedamage will repeat as long as letterbox is touching the edgeCollider2d
                     TakeDamage(1);
                     lastColName = collision.collider.name;
-                    
-                    //destroy letter
-                    Destroy(collision.gameObject, audio.clip.length);
                 }
 
             if (collision.gameObject.tag == "Heart" && currentHealth == startingHealth)

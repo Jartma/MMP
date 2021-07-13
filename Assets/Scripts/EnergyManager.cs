@@ -11,8 +11,6 @@ public class EnergyManager : MonoBehaviour
     private float counter = 0.0f;
     private Vector2 screenBounds;
 
-    private BoxCollider2D letter;
-    
     // Start is called before the first frame update
     void Start()
     {
@@ -36,12 +34,5 @@ public class EnergyManager : MonoBehaviour
             energy.transform.position = spawnPos;
         }
     }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Letter")
-        {
-            Destroy(this.gameObject);
-        }
-    }
+    
 }
