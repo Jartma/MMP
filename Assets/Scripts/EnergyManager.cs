@@ -23,15 +23,13 @@ public class EnergyManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //spawn an asteroid every x seconds somewhere within the screen bounds
+        //spawn a heart/energy every x seconds somewhere within the screen bounds
         counter += Time.deltaTime;
 
         if (counter >= spawnTime)
         {
             counter = 0.0f;
             
-            //1.5f sieht man das aufploppen nicht
-            //Vector2 spawnPos = new Vector2(Random.Range(-screenBounds.x, +screenBounds.x), screenBounds.y*1.5f);
             Vector2 spawnPos = new Vector2(-screenBounds.x*1.5f, Random.Range(-screenBounds.y, +screenBounds.y));
 
             GameObject energy = Instantiate<GameObject>(energyPrefabs[0]);

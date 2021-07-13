@@ -115,13 +115,13 @@ public class Health : MonoBehaviour
                 AudioSource audio = collision.gameObject.GetComponent<AudioSource>();
                 audio.Play();
                 
-                //get 10points for score
-                ScoreScript.scoreValue += 10;
-                
                 //destroy heart
                 Destroy(collision.gameObject, audio.clip.length);
                 
-                
+                //get 10points for score
+                ScoreScript.scoreValue += 10;
+
+
             } 
             
             if (collision.gameObject.tag == "Heart")
@@ -133,11 +133,11 @@ public class Health : MonoBehaviour
                 AudioSource audio = collision.gameObject.GetComponent<AudioSource>();
                 audio.Play();
                 
-                //get 1 energy
-                AddHealth(1);
-                
                 //destroy heart
                 Destroy(collision.gameObject, audio.clip.length);
+                
+                //get 1 energy
+                AddHealth(1);
             }
         }
     }
