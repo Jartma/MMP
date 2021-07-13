@@ -8,6 +8,7 @@ TagManager:
   - Letter
   - Text
   - Heart
+  - SoundJump
   layers:
   - Default
   - TransparentFX

@@ -1,4 +1,7 @@
+using System;
 using UnityEngine;
+
+
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -7,11 +10,18 @@ public class PlayerMovement : MonoBehaviour
     private Animator anim;
     private bool grounded;
 
+    public AudioSource soundJump;
+
     private void Awake()
     {
         //Grab references for rigidbody and animator from object
         body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+    }
+
+    private void Start()
+    {
+        soundJump = GameObject.FindWithTag("SoundJump").GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -31,6 +41,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKey(KeyCode.Space) && grounded)
         {
+            soundJump.Play();
             Jump();
         }
 
