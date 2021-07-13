@@ -787,7 +787,7 @@ GameObject:
   - component: {fileID: 418710805}
   m_Layer: 6
   m_Name: EnergyManager
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3626,7 +3626,7 @@ GameObject:
   - component: {fileID: 1971417411}
   m_Layer: 7
   m_Name: LetterManager
-  m_TagString: Untagged
+  m_TagString: Letter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
