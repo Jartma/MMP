@@ -119,7 +119,7 @@ public class Health : MonoBehaviour
                 Destroy(collision.gameObject, audio.clip.length);
                 
                 //get 10points for score
-                ScoreScript.scoreValue += 10;
+                ScoreScript.scoreValue += ScoreScript.score;
 
 
             } 
