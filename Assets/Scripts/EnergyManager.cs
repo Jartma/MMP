@@ -11,12 +11,11 @@ public class EnergyManager : MonoBehaviour
     private float counter = 0.0f;
     private Vector2 screenBounds;
 
-    public Transform heartPrefab;
-
     // Start is called before the first frame update
     void Start()
     {
         screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0.0f));
+        //letter = GameObject.FindGameObjectWithTag("Letter").GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame
@@ -30,7 +29,7 @@ public class EnergyManager : MonoBehaviour
             counter = 0.0f;
             
             Vector2 spawnPos = new Vector2(-screenBounds.x*1.5f, Random.Range(-screenBounds.y, +screenBounds.y));
-            
+
             GameObject energy = Instantiate<GameObject>(energyPrefabs[0]);
             energy.transform.position = spawnPos;
         }
