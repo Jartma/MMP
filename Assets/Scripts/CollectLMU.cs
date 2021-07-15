@@ -31,16 +31,19 @@ public class CollectLMU : MonoBehaviour
 
                 //write letter on canvas
                 L.enabled = true;
+                Destroy(collision.gameObject);
         }
         if(collision.gameObject.name == "M(Clone)"){
 
                 //write letter on canvas
                 M.enabled = true;
+                Destroy(collision.gameObject);
         }
         if(collision.gameObject.name == "U(Clone)"){
 
                 //write letter on canvas
                 U.enabled = true;
+                Destroy(collision.gameObject);
         }
         
     }
