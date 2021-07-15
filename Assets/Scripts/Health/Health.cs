@@ -14,6 +14,8 @@ public class Health : MonoBehaviour
 
     private string lastColName;
 
+    private AudioSource background;
+
     [NonSerialized] public double waitForSeconds = 2.0; 
 
 
@@ -22,6 +24,7 @@ public class Health : MonoBehaviour
         currentHealth = startingHealth;
         anim = GetComponent<Animator>();
         edgeCol = gameObject.GetComponent<EdgeCollider2D>();
+        background = GameObject.FindWithTag("MainCamera").GetComponent<AudioSource>();
     }
 
     public void TakeDamage(float _damage)
@@ -38,6 +41,7 @@ public class Health : MonoBehaviour
             {
                 anim.SetTrigger("die");
                 GetComponent<PlayerMovement>().enabled = false;
+                background.Stop();
                 
                 //Sound for GameOver 
                 AudioSource audio = GetComponent<AudioSource>();
