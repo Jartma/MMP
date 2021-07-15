@@ -6,7 +6,6 @@ TagManager:
   tags:
   - Ground
   - Letter
-  - Text
   - Heart
   - SoundJump
   layers:
@@ -16,8 +15,8 @@ TagManager:
   - Ground
   - Water
   - UI
-  - Heart
   - Letter
+  - Heart
   - 
   - 
   - 
@@ -43,18 +42,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Default
-    uniqueID: 0
-    locked: 0
   - name: Background
     uniqueID: 3534320191
     locked: 0
-  - name: Player
-    uniqueID: 2866992711
+  - name: Default
+    uniqueID: 0
     locked: 0
   - name: Heart
-    uniqueID: 3283949759
+    uniqueID: 1086252671
     locked: 0
   - name: Letter
-    uniqueID: 1183998487
+    uniqueID: 162064177
     locked: 0
