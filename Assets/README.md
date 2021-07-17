@@ -1,4 +1,4 @@
-﻿# Welcome to GAME-NAME!
+﻿# Welcome to DAILY LETTERS!
 
 - - - 
 This is our University project. A 2D game based on Tetris and Scrubbles and implemented with Unity/C#.
@@ -14,9 +14,9 @@ Due the current situation with Corona, our options to do something else - visit 
 ## Gameplay
 - - -
 Okay, get start by clicking on the play-Button and let's go!
-<br />It is a simple 2D game. The goal of the game is to form the word with the falling letters.
+<br />It is a simple 2D game. The goal of the game is to form the word with the falling letters. You have only to touch the letter which you are need. And the order of the collected letters does not matter.
 <br />But be careful! If you are hit by a falling letter, it costs energy!
-<br />You can move your character by press the "left"- and "right"-key and moving the letter too and jump by pressing the "space"-key . You are strong enough and have the possibility to push the letter off the edge of the screen. By pressing the "C"-key you can collect the letters you are looking for. The order of the collected letters does not matter.
+<br />You can move your character by press the "left"- and "right"-key and moving the letter too and jump by pressing the "space"-key . You are strong enough and have the possibility to push the letter off the edge of the screen. 
 <br />
 <br />The challenge for you will be not to hit by a letter. The higher the level, the faster the letters falling down and the time gets also be shorter and shorter. But just as in real life, there are positive events. Try to catch the flying hearts by touching. They give you energy and can increase your score. 
 

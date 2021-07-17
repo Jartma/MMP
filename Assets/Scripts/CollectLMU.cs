@@ -24,43 +24,38 @@ public class CollectLMU : MonoBehaviour
         soundCoin = GameObject.FindWithTag("SoundCoin").GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
         //check if edgeCollider2d was Hit
-        if(collision.gameObject.name == "L(Clone)"){
+        if(collision.gameObject.name == "L(Clone)" && L.enabled == false){
 
                 //write letter on canvas
                 L.enabled = true;
-                //play coin sound
+                //soundCoin started
                 soundCoin.Play();
-                //destroy letter
-                Destroy(collision.gameObject, soundCoin.clip.length);
+                //Element destroyed
+                Destroy(collision.gameObject);
                 
         }
-        if(collision.gameObject.name == "M(Clone)"){
+        if(collision.gameObject.name == "M(Clone)" && M.enabled == false){
 
                 //write letter on canvas
                 M.enabled = true;
-                //play coin sound
+                //soundCoin started
                 soundCoin.Play();
-                //destroy letter
-                Destroy(collision.gameObject, soundCoin.clip.length);
+                //Element destroyed
+                Destroy(collision.gameObject);
+                
         }
-        if(collision.gameObject.name == "U(Clone)"){
+        if(collision.gameObject.name == "U(Clone)" && U.enabled == false){
 
                 //write letter on canvas
                 U.enabled = true;
-                //play coin sound
+                //soundCoin started
                 soundCoin.Play();
-                //destroy letter
-                Destroy(collision.gameObject, soundCoin.clip.length);
-                
+                //Element destroyed
+                Destroy(collision.gameObject);
+
         }
         
     }

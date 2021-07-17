@@ -12,6 +12,9 @@ public class CollectPython : MonoBehaviour
     [SerializeField] private Text O;
     [SerializeField] private Text N;
     private BoxCollider2D boxCol;
+    
+    public AudioSource soundCoin;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,53 +25,69 @@ public class CollectPython : MonoBehaviour
         H.enabled = false;
         O.enabled = false;
         N.enabled = false;
+        
+        soundCoin = GameObject.FindWithTag("SoundCoin").GetComponent<AudioSource>();
+
     
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         //check if edgeCollider2d was Hit
-        if(collision.gameObject.name == "P(Clone)"){
+        if(collision.gameObject.name == "P(Clone)" && P.enabled == false){
 
                 //write letter on canvas
                 P.enabled = true;
+                //soundCoin started
+                soundCoin.Play();
+                //Element destroyed
                 Destroy(collision.gameObject);
         }
-        if(collision.gameObject.name == "Y(Clone)"){
+        if(collision.gameObject.name == "Y(Clone)" && Y.enabled == false){
 
                 //write letter on canvas
                 Y.enabled = true;
+                //soundCoin started
+                soundCoin.Play();
+                //Element destroyed
                 Destroy(collision.gameObject);
         }
-        if(collision.gameObject.name == "T(Clone)"){
+        if(collision.gameObject.name == "T(Clone)" && T.enabled == false){
 
                 //write letter on canvas
                 T.enabled = true;
+                //soundCoin started
+                soundCoin.Play();
+                //Element destroyed
                 Destroy(collision.gameObject);
         }
         //check if edgeCollider2d was Hit
-        if(collision.gameObject.name == "H(Clone)"){
+        if(collision.gameObject.name == "H(Clone)" && H.enabled == false){
 
                 //write letter on canvas
                 H.enabled = true;
+                //soundCoin started
+                soundCoin.Play();
+                //Element destroyed
                 Destroy(collision.gameObject);
         }
-        if(collision.gameObject.name == "O(Clone)"){
+        if(collision.gameObject.name == "O(Clone)" && O.enabled == false){
 
                 //write letter on canvas
                 O.enabled = true;
+                //soundCoin started
+                soundCoin.Play();
+                //Element destroyed
                 Destroy(collision.gameObject);
         }
-        if(collision.gameObject.name == "N(Clone)"){
+        if(collision.gameObject.name == "N(Clone)" && N.enabled == false){
 
                 //write letter on canvas
                 N.enabled = true;
+                //soundCoin started
+                soundCoin.Play();
+                //Element destroyed
                 Destroy(collision.gameObject);
         }
         

@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 47390726}
   m_Layer: 0
   m_Name: SoundCoin
-  m_TagString: Untagged
+  m_TagString: SoundCoin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -167,7 +167,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 200
+  Priority: 150
   DopplerLevel: 1
   MinDistance: 3.5394287
   MaxDistance: 500
