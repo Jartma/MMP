@@ -36,19 +36,23 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\MainMenu.cs" />
+     <Compile Include="Assets\Scripts\ScoreScript.cs" />
      <Compile Include="Assets\Scripts\EnergyManager.cs" />
+     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\HeartScript.cs" />
      <Compile Include="Assets\Scripts\LetterManager.cs" />
-     <Compile Include="Assets\Scripts\LetterScript.cs" />
-     <Compile Include="Assets\Scripts\MainMenu.cs" />
-     <Compile Include="Assets\Scripts\GrabScript.cs" />
-     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
-     <Compile Include="Assets\Scripts\enemyScript.cs" />
      <Compile Include="Assets\Scripts\Health\Health.cs" />
+     <Compile Include="Assets\Scripts\LetterScript.cs" />
+     <Compile Include="Assets\Scripts\GrabScript.cs" />
      <Compile Include="Assets\Scripts\Health\HealthCollectible.cs" />
+     <Compile Include="Assets\Scripts\enemyScript.cs" />
      <Compile Include="Assets\Scripts\Health\Healthbar.cs" />
-     <Compile Include="Assets\Scripts\ScoreScript.cs" />
      <Compile Include="Assets\Scripts\Timer.cs" />
+     <Compile Include="Assets\Scripts\CollectLMU.cs" />
+     <Compile Include="Assets\Scripts\CollectUnity.cs" />
+     <Compile Include="Assets\Scripts\CollectPython.cs" />
+     <Compile Include="Assets\Scripts\CollectPygame.cs" />
      <None Include="Assets\Sprites\Character\Read Me.txt" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
