@@ -9,6 +9,10 @@ public class CollectLMU : MonoBehaviour
     [SerializeField] private Text M;
     [SerializeField] private Text U;
     private BoxCollider2D boxCol;
+
+    public AudioSource soundCoin;
+    
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +20,8 @@ public class CollectLMU : MonoBehaviour
         L.enabled = false;
         M.enabled = false;
         U.enabled = false;
+
+        soundCoin = GameObject.FindWithTag("SoundCoin").GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -31,19 +37,30 @@ public class CollectLMU : MonoBehaviour
 
                 //write letter on canvas
                 L.enabled = true;
-                Destroy(collision.gameObject);
+                //play coin sound
+                soundCoin.Play();
+                //destroy letter
+                Destroy(collision.gameObject, soundCoin.clip.length);
+                
         }
         if(collision.gameObject.name == "M(Clone)"){
 
                 //write letter on canvas
                 M.enabled = true;
-                Destroy(collision.gameObject);
+                //play coin sound
+                soundCoin.Play();
+                //destroy letter
+                Destroy(collision.gameObject, soundCoin.clip.length);
         }
         if(collision.gameObject.name == "U(Clone)"){
 
                 //write letter on canvas
                 U.enabled = true;
-                Destroy(collision.gameObject);
+                //play coin sound
+                soundCoin.Play();
+                //destroy letter
+                Destroy(collision.gameObject, soundCoin.clip.length);
+                
         }
         
     }
