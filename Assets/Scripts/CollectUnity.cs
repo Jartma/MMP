@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CollectUnity : MonoBehaviour
 {
@@ -75,6 +76,9 @@ public class CollectUnity : MonoBehaviour
                 soundCoin.Play();
                 //Element destroyed
                 Destroy(collision.gameObject);
+        }
+        if (U.enabled && N.enabled && I.enabled && T.enabled && Y.enabled) {
+            SceneManager.LoadScene("Level 3");
         }
         
     }
