@@ -59,6 +59,7 @@ public class CollectLMU : MonoBehaviour
 
         }
         if (L.enabled && M.enabled && U.enabled) {
+            ScoreScript.scoreValue += ScoreScript.scoreL1;
             SceneManager.LoadScene("Level 2");
         }
         

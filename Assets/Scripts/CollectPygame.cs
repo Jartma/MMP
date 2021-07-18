@@ -90,6 +90,7 @@ public class CollectPygame : MonoBehaviour
         }
         if (P.enabled && Y.enabled && G.enabled && A.enabled && M.enabled && E.enabled ) {
             SceneManager.LoadScene("Menu Screen/Start Menu");
+            ScoreScript.scoreValue += ScoreScript.scoreL4;
         }
         
     }

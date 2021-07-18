@@ -78,6 +78,7 @@ public class CollectUnity : MonoBehaviour
                 Destroy(collision.gameObject);
         }
         if (U.enabled && N.enabled && I.enabled && T.enabled && Y.enabled) {
+            ScoreScript.scoreValue += ScoreScript.scoreL2;
             SceneManager.LoadScene("Level 3");
         }
         

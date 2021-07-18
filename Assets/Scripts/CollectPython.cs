@@ -92,7 +92,8 @@ public class CollectPython : MonoBehaviour
                 Destroy(collision.gameObject);
         }
          if (P.enabled && Y.enabled && T.enabled && H.enabled && O.enabled && N.enabled) {
-            SceneManager.LoadScene("Level 4");
+                 ScoreScript.scoreValue += ScoreScript.scoreL3; 
+                 SceneManager.LoadScene("Level 4");
         }
         
     }
