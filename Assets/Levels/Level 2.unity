@@ -2596,7 +2596,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c34de2ef9d2ef2747bcb47e2116fbfde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 600
   timerIsRunning: 1
   timeText: {fileID: 1034331871}
 --- !u!114 &1034331871
@@ -3172,7 +3171,6 @@ GameObject:
   - component: {fileID: 1397318766}
   - component: {fileID: 1397318767}
   - component: {fileID: 1397318768}
-  - component: {fileID: 1397318769}
   - component: {fileID: 1397318770}
   - component: {fileID: 1397318771}
   - component: {fileID: 1397318773}
@@ -3291,8 +3289,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 2028379155}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3342,25 +3339,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 3
---- !u!114 &1397318769
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1397318761}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35a3e529266a95342b2d99a5800b785f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  grabbed: 0
-  distance: 1.24
-  Holdpoint: {fileID: 2028379155}
-  throwforce: 20
-  notgrabbed:
-    serializedVersion: 2
-    m_Bits: 4294967295
 --- !u!68 &1397318770
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -3375,10 +3353,10 @@ EdgeCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.03, y: 1.11}
-  m_EdgeRadius: 0.1
+  m_EdgeRadius: 0
   m_Points:
-  - {x: -0.5, y: 0}
-  - {x: 0.36, y: 0}
+  - {x: -0.57, y: 0}
+  - {x: 0.57, y: 0}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -4590,36 +4568,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2028379154
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2028379155}
-  m_Layer: 0
-  m_Name: Holdpoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2028379155
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2028379154}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: -0.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1397318765}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2080669312
 GameObject:

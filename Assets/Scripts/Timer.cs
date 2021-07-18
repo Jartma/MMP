@@ -2,15 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
-    public float timeRemaining = 10;
+    public static float timeRemaining = 600;
     public bool timerIsRunning = false;
     public Text timeText;
 
     private void Start()
     {
+        if(SceneManager.GetActiveScene().name == "Level 1"){
+            timeRemaining = 600;
+        }
         // Starts the timer automatically
         timerIsRunning = true;
     }
@@ -26,9 +30,10 @@ public class Timer : MonoBehaviour
             }
             else
             {
-                Debug.Log("Time has run out!");
+                Debug.Log("Time is over!");
                 timeRemaining = 0;
                 timerIsRunning = false;
+                StartCoroutine(loadGameOverScreen());
             }
         }
     }
@@ -41,5 +46,11 @@ public class Timer : MonoBehaviour
         float seconds = Mathf.FloorToInt(timeToDisplay % 60);
 
         timeText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+    }
+
+      IEnumerator loadGameOverScreen()
+    {
+        yield return new WaitForSeconds(seconds: 1);
+        SceneManager.LoadScene("Menu Screen/GameOverMenu");
     }
 }

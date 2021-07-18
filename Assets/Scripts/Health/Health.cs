@@ -54,8 +54,6 @@ public class Health : MonoBehaviour
                 StartCoroutine(loadGameOverScreen());
 
             }
-
-            
         }
     }
 
@@ -66,14 +64,15 @@ public class Health : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        //for debugging purposes
+        /*if (Input.GetKeyDown(KeyCode.E))
         {
             TakeDamage(1);
         }
         if (Input.GetKeyDown(KeyCode.B))
         {
             AddHealth(1);
-        }
+        }*/
     }
     
 
@@ -85,7 +84,7 @@ public class Health : MonoBehaviour
         if(collision.otherCollider == edgeCol){
             if(collision.gameObject.tag=="Letter")
             {
-                Debug.Log("collision with letter");
+      
                 //letter disabled & destroy
                 collision.gameObject.GetComponent<Renderer>().enabled = false;
 
@@ -101,11 +100,11 @@ public class Health : MonoBehaviour
                 TakeDamage(1);
             }
         }
-        if(collision.otherCollider == boxCol || collision.otherCollider == edgeCol){
+        if(collision.otherCollider == boxCol){
 
             if (collision.gameObject.tag == "Heart")
             {
-                Debug.Log("collision with heart");
+                
                 //heart disabled
                 collision.gameObject.GetComponent<Renderer>().enabled = false;
                 

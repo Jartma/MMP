@@ -65,7 +65,7 @@ public class LetterManager : MonoBehaviour
                         for(int i = 0; i < letterPrefabs.Count; i++){
                         letterBool[i] = false;
                         }
-                        Debug.Log("all letters used");
+            
                     }
                 }
             }

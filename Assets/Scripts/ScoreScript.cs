@@ -23,8 +23,7 @@ public class ScoreScript : MonoBehaviour
         scoreL3 = 150;
         scoreL4 = 200;
         
-        if (SceneManager.sceneCountInBuildSettings.Equals(0) || SceneManager.sceneCountInBuildSettings.Equals(2))
-        {
+        if(SceneManager.GetActiveScene().name == "Level 1"){
             scoreValue = 0;
         }
         
