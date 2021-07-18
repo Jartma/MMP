@@ -13,13 +13,11 @@ public class LetterManager : MonoBehaviour
     [SerializeField] private float spawnTime = 20.0f;
     private float counter = 0.0f;
     private Vector2 screenBounds;
-
-    //private GameObject H;
-    //private GameObject E;
-    //private GameObject Y ;
-
     private GameObject letter;
     private BoxCollider2D ground;
+    private bool[] letterBool;
+    private int randomNumber;
+    private bool instantiated;
 
 
     private void Awake() {
@@ -30,11 +28,18 @@ public class LetterManager : MonoBehaviour
         screenBounds = Camera.main.ScreenToWorldPoint(new Vector3 (Screen.width, Screen.height, 0.0f));
         ground = GameObject.FindGameObjectWithTag("Ground").GetComponent<BoxCollider2D>();
 
+        letterBool = new bool[letterPrefabs.Count];
+        for(int i = 0; i < letterPrefabs.Count; i++){
+            letterBool[i] = false;
+        }
+        instantiated = false;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        instantiated = false;
         
         counter += Time.deltaTime;
         //spawn a random letter 
@@ -43,9 +48,36 @@ public class LetterManager : MonoBehaviour
 
             Vector2 spawnPos = new Vector2( Random.Range(-screenBounds.x, +screenBounds.x), screenBounds.y*1.5f);
 
-            letter = Instantiate(letterPrefabs[Random.Range(0, letterPrefabs.Count)]) as GameObject;
+            randomNumber = Random.Range(0, letterPrefabs.Count);
 
-            letter.transform.position = spawnPos;     
-        }   
+            while(instantiated != true){
+
+                if(letterBool[randomNumber] == false){
+                    letter = Instantiate(letterPrefabs[randomNumber]) as GameObject;
+                    letter.transform.position = spawnPos;
+                    letterBool[randomNumber] = true;
+                    instantiated = true;
+                }
+                else if(letterBool[randomNumber]){
+                    randomNumber = Random.Range(0, letterPrefabs.Count);
+
+                    if(allLettersUsed()){
+                        for(int i = 0; i < letterPrefabs.Count; i++){
+                        letterBool[i] = false;
+                        }
+                        Debug.Log("all letters used");
+                    }
+                }
+            }
+        }
+    }
+    
+     private bool allLettersUsed() {
+        for ( int i = 0; i < letterBool.Length; ++i ) {
+            if (letterBool[i] == false) {
+            return false;
+            }
+        }
+        return true;
     }
 }
