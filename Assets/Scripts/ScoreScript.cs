@@ -23,16 +23,10 @@ public class ScoreScript : MonoBehaviour
         scoreL3 = 150;
         scoreL4 = 200;
         
-        if(SceneManager.GetActiveScene().name == "Level 1"){
-            scoreValue = 0;
-        }
-        
         if (scoreValue == 0)
         {
             scoreValue = 0;
         }
-
-        
 
     }
 
