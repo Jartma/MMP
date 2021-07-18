@@ -89,7 +89,7 @@ public class CollectPygame : MonoBehaviour
                 Destroy(collision.gameObject);
         }
         if (P.enabled && Y.enabled && G.enabled && A.enabled && M.enabled && E.enabled ) {
-            SceneManager.LoadScene("Menu Screen/Start Menu");
+            SceneManager.LoadScene("Menu Screen/VictoryMenu");
             ScoreScript.scoreValue += ScoreScript.scoreL4;
         }
         
