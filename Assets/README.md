@@ -26,3 +26,7 @@ Okay, get start by clicking on the play-Button and let's go!
 - - -
 Note that the letters are chosen at random. You can have so much luck and have the letters together very quickly which you are need. Or in the worst case you may not even have reached a word in the fifth and final level.
 <br />At first try not to hit by the falling letters. It is just a game and you should have fun!
+<br />
+
+#### Settings for Source Code in Unity
+In Unity, please set the resolution of the project in FullHD (1920x1080px).
