@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CollectLMU : MonoBehaviour
 {
@@ -56,6 +57,9 @@ public class CollectLMU : MonoBehaviour
                 //Element destroyed
                 Destroy(collision.gameObject);
 
+        }
+        if (L.enabled && M.enabled && U.enabled) {
+            SceneManager.LoadScene("Level 2");
         }
         
     }

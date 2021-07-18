@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CollectPygame : MonoBehaviour
 {
@@ -86,6 +87,9 @@ public class CollectPygame : MonoBehaviour
                 soundCoin.Play();
                 //Element destroyed
                 Destroy(collision.gameObject);
+        }
+        if (P.enabled && Y.enabled && G.enabled && A.enabled && M.enabled && E.enabled ) {
+            SceneManager.LoadScene("Menu Screen/Start Menu");
         }
         
     }

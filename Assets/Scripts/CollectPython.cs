@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CollectPython : MonoBehaviour
 {
@@ -89,6 +90,9 @@ public class CollectPython : MonoBehaviour
                 soundCoin.Play();
                 //Element destroyed
                 Destroy(collision.gameObject);
+        }
+         if (P.enabled && Y.enabled && T.enabled && H.enabled && O.enabled && N.enabled) {
+            SceneManager.LoadScene("Level 4");
         }
         
     }
