@@ -1,6 +1,7 @@
 ﻿# Welcome to DAILY LETTERS!
 
-- - - 
+- - -
+![](screenshot-game.PNG)
 This is our University project. A 2D game based on Tetris and Scrubbles and implemented with Unity/C#.
 
 

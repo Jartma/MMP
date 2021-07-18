@@ -1,9 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2f98302b-56fc-47a7-a81c-e44c690cbfd7" name="Default Changelist" comment="commit">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScoreScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScoreScript.cs" afterDir="false" />
+    <list default="true" id="2f98302b-56fc-47a7-a81c-e44c690cbfd7" name="Default Changelist" comment="score refresh after new game/gameover">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.mmp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.mmp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/00/003e24754f2c18cccc79b2cd5e6b94a1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/06/06be75d15136114fae011c173910913e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/0e/0e5f1fce53d1382d47fddc7abb966682" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/12/12844bfadeefbc72a0545a6dff6fa0bc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/14/14086c8542450ab35a37defcaafed9ff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/1b/1bf5749b4c54be154239b7d7a2e51691" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/1c/1cb0cfe89035cf137aa43f492533f2b8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/1d/1d4755128e5ca66ad4b7f69d30ac36e1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/1e/1e2ac797e41dbe1637cfa9f4266af1f0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/1f/1f5f9416156ecddf48ffa493928c312c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/36/360c0429d9240a78e9fbbbd87b39d7e7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/36/369c5ccd98148dfb8b3c42f44e338deb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/36/36ea689b46370cc09a354cc224976e74" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/40/404842e88391ce2e3316bb90a068565d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/4a/4aa634c5974c374b746efbbbdf9b79bd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/4c/4cbd85e3ccbbda6ed1ed8f6453e778f8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/56/56d49d55681deae80ee0dd587a0cb339" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/60/60ef4c06a8d3b6de6b02c2bbffe0dcfc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/7b/7b7871a21f68b9438070cec8a73781ae" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/91/9150e51ca53efb74bc483276f6ecd0d6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/94/945b677178bea5246aafeb7a0a8dbb21" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/97/9762fad7fc321f3fda572101d105ac1f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/9d/9d8b0a36e16c5e20796c7ff14d2964ba" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/9e/9ed42881c7ed2c34c20806ac7fe31a44" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/a6/a632544bdba31e46e19123a5ac2094f2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/aa/aa997b317a62228c1bc59f4c8e17d97c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/ab/ab9e86973cd7f6adb545eada4da2c5f9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/b2/b2f202cd0bef404616579036ab693615" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/bd/bd9617e0a9687c3363cb1ad76377f1de" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/ca/cada8bae4d05640a457de26a9289e361" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d1/d1e26755522f52d8126f82c9885121eb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d3/d393ad3f6779d67c894b759b91e25a09" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d5/d5f73bae18b3d3f7c5551d9b6a7e08dc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/e8/e8293efe132f8c89f6f95647e007e6dc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/e8/e8e3c0cef96ed6014de9ab594b2590d6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/f8/f82552015b9cadaa366ce0f30c668ac4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/4d/4d2a36d9faf65734f0bbefb3ee623532.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/4d/4d2a36d9faf65734f0bbefb3ee623532.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626627487289</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="score refresh after new game/gameover">
+      <created>1626627741523</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1626627741523</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,6 +241,7 @@
     <MESSAGE value="commits after Branch" />
     <MESSAGE value="added coinsound - not working :/" />
     <MESSAGE value="commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+    <MESSAGE value="score refresh after new game/gameover" />
+    <option name="LAST_COMMIT_MESSAGE" value="score refresh after new game/gameover" />
   </component>
 </project>
